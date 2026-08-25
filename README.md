@@ -7,7 +7,7 @@ research question.
 
 ## Project roadmap
 
-- [ ] **Stage 1 — Single neuron:** Numerically integrate the 4 coupled HH
+- [x] **Stage 1 — Single neuron:** Numerically integrate the 4 coupled HH
   
       ODEs (Euler vs. RK4), reproduce the action potential, validate against
       known qualitative behavior (threshold, refractory period).
@@ -73,6 +73,11 @@ python scripts/run_stage3_synchronization.py
 # Run the test suite
 pytest tests/ -v
 ```
+## Result
+Single Spike
+
+![](results/figures/stage1_single_spike.png)
+
 
 ## Background
 
@@ -89,6 +94,10 @@ network-level dynamics — relevant to certain epilepsies).
 
 Active, independent research project. See `docs/lab_notebook.md`
 for the dated research log.
+
+## References
+
+- [A QUANTITATIVE DESCRIPTION OF MEMBRANE CURRENT AND ITS APPLICATION TO CONDUCTION AND EXCITATION IN NERVE](https://www.damtp.cam.ac.uk/user/gold/pdfs/teaching/HodgkinHuxley.pdf)
 
 ## License
 

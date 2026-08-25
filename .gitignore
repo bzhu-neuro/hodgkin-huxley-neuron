@@ -21,6 +21,4 @@ venv/
 .vscode/
 .idea/
 
-# Large generated figures (keep the repo light; regenerate with scripts/)
-results/figures/*.png
-!results/figures/.gitkeep
+
