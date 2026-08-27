@@ -65,4 +65,4 @@ Day 3: 2026-08-26
 
 **Problem or surprise (if any):** N/A
 
-**Next step:** Actually start the code of Stage 2.
+**Next step:** Actually start the code of Stage 2. 
