@@ -52,17 +52,38 @@ Day 2: 2026-08-24
 
 **Problem or surprise (if any):** It displays correctly on VS but not on github.
 
-**Next step:** Compare Euler vs RK4 at larger dt to find where Euler starts to break down. Then find the minimum (threshold) current for a spike via
+**Next step:** Compare Euler vs RK4 at larger dt to find where Euler starts to 
+break down. Then find the minimum (threshold) current for a spike via
 bisection. (Start Stage 2)
 
 ##
 
 Day 3: 2026-08-26
 
-**Goal today:** Learn about everything I need for Stage 2. Ex: Reduce to the 2D FitzHugh-Nagumo model, phase-plane analysis, nullclines, Jacobian linearization, bifurcation diagram vs. injected current.
+**Goal today:** Learn about everything I need for Stage 2. Ex: Reduce to the 
+2D FitzHugh-Nagumo model, phase-plane analysis, nullclines, Jacobian 
+linearization, bifurcation diagram vs. injected current.
 
 **Result / observation:** Learned the material.
 
 **Problem or surprise (if any):** N/A
 
-**Next step:** Actually start the code of Stage 2. 
+**Next step:** Actually start the code of Stage 2.
+
+##
+
+Day 4: 2026-08-29
+
+**Goal today:** To complete my learning on the FitzHugh-Nagumo model and 
+transition into implementing that model into code.
+
+**What I did:** Created functions using the FitzHugh-Nagumo model with the 
+variables (v,w). Made a function for the nullclines of the model. Made a 
+function for where they intersect. Made a function for the eigenvalues of 
+the Jacobian Matrix of the intersection of the nullclines.
+
+**Result / observation:** Created those functions.
+
+**Problem or surprise (if any):** N/A
+
+**Next step:** Implement those functions to display the model.
