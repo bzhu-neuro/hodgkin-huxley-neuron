@@ -87,3 +87,20 @@ the Jacobian Matrix of the intersection of the nullclines.
 **Problem or surprise (if any):** N/A
 
 **Next step:** Implement those functions to display the model.
+
+##
+
+Day 5: 2026-09-03
+
+**Goal today:** To double check the functions I created from the previous
+day.
+
+**What I did:** Created a test for a fixed_point function and a test for
+the jacobian eigenvalue function.
+
+**Result / observation:** Created those functions.
+
+**Problem or surprise (if any):** N/A
+
+**Next step:** Create another test for another function and Update ODE
+Integrators.
