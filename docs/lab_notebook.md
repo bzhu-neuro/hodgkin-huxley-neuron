@@ -104,3 +104,27 @@ the jacobian eigenvalue function.
 
 **Next step:** Create another test for another function and Update ODE
 Integrators.
+
+##
+
+Day 6: 2026-09-06
+
+**Goal today:** Finish creating the last function test. Import and change
+the rk4 and euler integrate functions from part 1 to here. To graph the 
+v and w nullclines, a fixed point on the intersection, and to find the 
+trajectory of a random point to that line.
+
+**What I did:** Created a test for a stability in the plane. I also copy
+and pasted my euler and rk4 functions from last part, but I changed it such
+that it works for any general function and not just hh or fhn derivatives.
+I also plotted the nullclines.
+
+**Result / observation:** The plot looks pretty cool. There is a vector
+space on top that also displays the direction.
+
+**Problem or surprise (if any):** The graphing is really annoying. The
+w-nullcline for some reason isn't interesting where it should be. Also
+changing the functions is a headache.
+
+**Next step:** Plot when a point has unstable current input.
+
