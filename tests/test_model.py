@@ -1,3 +1,4 @@
+from hh_model.model import hh_derivatives
 from hh_model.integrators import rk4_integrate
 from hh_model.kinetics import steady_state
 from hh_model.stimuli import step_current
@@ -18,7 +19,8 @@ def test_resting_potential_is_stable_without_stimulus():
 
     no_current = step_current(amplitude=0.0, t_on=0.0, t_off=0.0)
     t_array = np.arange(0.0, 20.0, 0.01)
-    states = rk4_integrate(state0, t_array, no_current)
+    deriv_func = lambda state,t: hh_derivatives( state,  t, no_current)
+    states = rk4_integrate(deriv_func, state0, t_array)
     a = np.abs(states[:, 0] - V0)
     assert np.all(np.abs(states[:, 0] - V0) < 1.0)
 
@@ -33,7 +35,8 @@ def test_suprathreshold_current_produces_a_spike():
 
     strong_current = step_current(amplitude=10.0, t_on=5.0, t_off=30.0)
     t_array = np.arange(0.0, 50.0, 0.01)
-    states = rk4_integrate(state0, t_array, strong_current)
+    deriv_func = lambda state,t: hh_derivatives( state,  t, strong_current)
+    states = rk4_integrate(deriv_func, state0, t_array)
 
     assert np.max(states[:, 0]) > 0.0
 
@@ -46,6 +49,8 @@ def test_subthreshold_current_does_not_spike():
 
     weak_current = step_current(amplitude=0.5, t_on=5.0, t_off=30.0)
     t_array = np.arange(0.0, 50.0, 0.01)
-    states = rk4_integrate(state0, t_array, weak_current)
+    deriv_func = lambda state,t: hh_derivatives( state,  t, weak_current)
+    states = rk4_integrate(deriv_func, state0, t_array)
+
 
     assert np.max(states[:, 0]) < 0.0

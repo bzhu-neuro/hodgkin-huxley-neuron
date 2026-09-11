@@ -128,3 +128,22 @@ changing the functions is a headache.
 
 **Next step:** Plot when a point has unstable current input.
 
+##
+
+Day 7: 2026-09-10
+
+**Goal today:** Finish the rest of Stage 2. Create a graph of injected
+current vs v-star. Find the flip in stability in different injected
+currents. Graph two values, one stable and another unstable, onto the
+v-null and w-null graph.
+
+**What I did:** I created the graphs. I also needed to import it back
+to github.
+
+**Result / observation:** Both plots look pretty cool.
+
+**Problem or surprise (if any):** The stability graph was acting weird
+by an increment of 0.5. Turns out that I misread the labels of the axes.
+Also importing is really annoying.
+
+**Next step:** Start learning the material necessary for stage 3.

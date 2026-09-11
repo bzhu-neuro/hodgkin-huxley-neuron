@@ -2,6 +2,7 @@
 Stage 1: Single Hodgkin-Huxley neuron, step current, RK4 vs Euler comparison.
 
 """
+from hh_model.model import hh_derivatives
 from hh_model.integrators import rk4_integrate, euler_integrate
 from hh_model.kinetics import steady_state
 from hh_model.stimuli import step_current
@@ -23,8 +24,9 @@ for i in range(len(t_array)):
     I_injarray[i - 1] = I_inj(t_array[i - 1])
 
 # Integrate
-states_rk4 = rk4_integrate(state0, t_array, I_inj)
-states_euler = euler_integrate(state0, t_array, I_inj)
+deriv_func = lambda state,t: hh_derivatives( state,  t, I_inj)
+states_rk4 = rk4_integrate(deriv_func, state0, t_array)
+states_euler = rk4_integrate(deriv_func, state0, t_array)
 
 # Plot
 fig, axes = plt.subplots(3, 1, figsize=(9, 9), sharex=True)
