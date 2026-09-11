@@ -11,7 +11,7 @@ research question.
   
       ODEs (Euler vs. RK4), reproduce the action potential, validate against
       known qualitative behavior (threshold, refractory period).
-- [ ] **Stage 2 — Dynamical systems analysis:** Reduce to the 2D
+- [x] **Stage 2 — Dynamical systems analysis:** Reduce to the 2D
   
       FitzHugh-Nagumo model, phase-plane analysis, nullclines, Jacobian
       linearization, bifurcation diagram vs. injected current.
@@ -78,6 +78,16 @@ Single Spike
 
 ![](results/figures/stage1_single_spike.png)
 
+Phase Plane
+
+Stable Fixed Point
+![](results/figures/stage2_phase_portrait_I_0.32.png)
+
+Unstable Fixed Point
+![](results/figures/stage2_phase_portrait_I_0.35.png)
+
+Bifurcation Diagram
+![](results/figures/stage2_bifurcation_diagram.png)
 
 ## Background
 
@@ -98,6 +108,8 @@ for the dated research log.
 ## References
 
 - [A QUANTITATIVE DESCRIPTION OF MEMBRANE CURRENT AND ITS APPLICATION TO CONDUCTION AND EXCITATION IN NERVE](https://www.damtp.cam.ac.uk/user/gold/pdfs/teaching/HodgkinHuxley.pdf)
+
+- [DYNAMICAL SYSTEMS IN NEUROSCIENCE: THE GEOMETRY OF EXCITABILITY AND BURSTING by EUGENE M. IZHIKEVICH](https://www.izhikevich.org/publications/dsn.pdf)
 
 ## License
 
