@@ -147,3 +147,23 @@ by an increment of 0.5. Turns out that I misread the labels of the axes.
 Also importing is really annoying.
 
 **Next step:** Start learning the material necessary for stage 3.
+
+##
+
+
+Day 8: 2026-09-13
+
+**Goal today:** Learn about HH Coupled Oscillators and the Kuramoto 
+Model of Oscillators.
+
+**What I did:** Learned about the coupled oscillators which are a more
+realistic but complex model and learned about the Kuramoto Model which
+is a more simple but abstract model.
+
+**Result / observation:** Obtained knoledge.
+
+**Problem or surprise (if any):** N/A
+
+**Next step:** Start creating variables and have an idea on how to
+transition this into code.
+
