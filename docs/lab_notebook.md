@@ -167,3 +167,20 @@ is a more simple but abstract model.
 **Next step:** Start creating variables and have an idea on how to
 transition this into code.
 
+
+##
+
+
+Day 9: 2026-09-14
+
+**Goal today:** Finish off coding CFHN and Kuramoto deratives.
+
+**What I did:** I coded what I was supposed to do.
+
+**Result / observation:** N/A
+
+**Problem or surprise (if any):** I was pretty hard to find the
+"right" formula because there are some variations.
+
+**Next step:** Create tests to verify the legitimacy of the
+functions.
