@@ -184,3 +184,25 @@ Day 9: 2026-09-14
 
 **Next step:** Create tests to verify the legitimacy of the
 functions.
+
+
+##
+
+
+Day 10: 2026-09-14
+
+**Goal today:** Create tests to verify the legitimacy of the
+functions.
+
+**What I did:** Created the first 3 tests but didn't yet do
+the next 3.
+
+**Result / observation:** N/A
+
+**Problem or surprise (if any):** I fixed the coupled FHN
+derivative function because in Python, you had to use integers
+and not floats to index. Also I switched the coupling part
+of the function to dot product minus degrees times v.
+
+**Next step:** To finish 3 more tests to verify the legitimacy
+of the functions.
