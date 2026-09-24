@@ -206,3 +206,21 @@ of the function to dot product minus degrees times v.
 
 **Next step:** To finish 3 more tests to verify the legitimacy
 of the functions.
+
+##
+
+
+Day 11: 2026-09-23
+
+**Goal today:** Finish the tests of testts
+
+**What I did:** Created the next 2 tests which tests for
+synchrony and another one that tests that ring_adjancy has
+two neighbors.
+
+**Result / observation:** The tests worked.
+
+**Problem or surprise (if any):** Getting rk4_integrate for
+source code to notebook.
+
+**Next step:** To start plotting
