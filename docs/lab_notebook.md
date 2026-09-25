@@ -212,7 +212,7 @@ of the functions.
 
 Day 11: 2026-09-23
 
-**Goal today:** Finish the tests of testts
+**Goal today:** Finish the tests of tests
 
 **What I did:** Created the next 2 tests which tests for
 synchrony and another one that tests that ring_adjancy has
@@ -224,3 +224,26 @@ two neighbors.
 source code to notebook.
 
 **Next step:** To start plotting
+
+
+##
+
+
+Day 12: 2026-09-24
+
+**Goal today:** Finish a plot that graphs 3 different graphs
+of the relationship between two oscillators when K = 0.0,
+0.02, and 0.15.
+
+**What I did:** Used numpy and matplotlib.pyplot to graph 3
+different plots. I then used my fhn coupled derivative and
+integrated that using rk4. This, I got v and plotted that
+respect to time.
+
+**Result / observation:** 3 nice looking graphs that get
+more similar as K goes up.
+
+**Problem or surprise (if any):** lambda function
+
+**Next step:** To start plotting more plots.
+
