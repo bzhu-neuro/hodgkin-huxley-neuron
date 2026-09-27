@@ -15,7 +15,7 @@ research question.
   
       FitzHugh-Nagumo model, phase-plane analysis, nullclines, Jacobian
       linearization, bifurcation diagram vs. injected current.
-- [ ] **Stage 3 — Network synchronization:** Couple multiple HH neurons /
+- [x] **Stage 3 — Network synchronization:** Couple multiple HH neurons /
   
       Kuramoto oscillators, study how coupling strength and topology affect
       synchronization.
@@ -89,6 +89,20 @@ Unstable Fixed Point
 Bifurcation Diagram
 ![](results/figures/stage2_bifurcation_diagram.png)
 
+Synchronization
+
+Increasing Coupling
+![](results/figures/stage3_fhn_coupling.png)
+
+Synchronization Error
+![](results/figures/stage3_fhn_sync_error.png)
+
+Ring Synchronization
+![](results/figures/stage3_kuramoto_transition_ring.png)
+
+All to All Synchronization
+![](results/figures/stage3_kuramoto_transition_all_to_all.png)
+
 ## Background
 
 The Hodgkin-Huxley model (Hodgkin & Huxley, 1952, *J Physiol* 117:500-544)
@@ -110,6 +124,8 @@ for the dated research log.
 - [A QUANTITATIVE DESCRIPTION OF MEMBRANE CURRENT AND ITS APPLICATION TO CONDUCTION AND EXCITATION IN NERVE](https://www.damtp.cam.ac.uk/user/gold/pdfs/teaching/HodgkinHuxley.pdf)
 
 - [DYNAMICAL SYSTEMS IN NEUROSCIENCE: THE GEOMETRY OF EXCITABILITY AND BURSTING by EUGENE M. IZHIKEVICH](https://www.izhikevich.org/publications/dsn.pdf)
+
+- [Nonlinear Dynamics and Chaos Third Edition by STEVEN A. STROGATZ]()
 
 ## License
 
