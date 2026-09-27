@@ -247,3 +247,23 @@ more similar as K goes up.
 
 **Next step:** To start plotting more plots.
 
+##
+
+
+Day 13: 2026-09-24
+
+**Goal today:** Finish plotting the rest of the plots which
+one compares the the difference in synchronization. And 2
+compares the coupling strength to the order parameter with
+different adjancency matrices.
+
+**What I did:** Used numpy and matplotlib.pyplot to graph 
+plots. In general, I used the respective derivative, and then
+integrated it, then I plotted.
+
+**Result / observation:** Nice looking plots!
+
+**Problem or surprise (if any):** I had some korean file
+in my pathway and I had to get rid of it.
+
+**Next step:** To start stage 4!
