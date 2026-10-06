@@ -267,3 +267,20 @@ integrated it, then I plotted.
 in my pathway and I had to get rid of it.
 
 **Next step:** To start stage 4!
+
+
+Day 14: 2026-10-05
+
+**Goal today:** Starting part 4.
+
+**What I did:** Read over the proposal to see how everything
+connects to each other. Then start working on creating
+functions.
+
+**Result / observation:** Created some functions.
+
+**Problem or surprise (if any):** Had to use try/finally
+for the first time to make some temporary funcions.
+
+**Next step:** o finish making my functions and to start on
+creating tests for those respective functions.
