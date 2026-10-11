@@ -268,6 +268,7 @@ in my pathway and I had to get rid of it.
 
 **Next step:** To start stage 4!
 
+##
 
 Day 14: 2026-10-05
 
@@ -282,5 +283,21 @@ functions.
 **Problem or surprise (if any):** Had to use try/finally
 for the first time to make some temporary funcions.
 
-**Next step:** o finish making my functions and to start on
+**Next step:** To finish making my functions and to start on
 creating tests for those respective functions.
+
+##
+
+Day 15: 2026-10-11
+
+**Goal today:** To finish making functions and to start creating
+tests.
+
+**What I did:** I read over the proposal and created tests 
+accordingly.
+
+**Result / observation:** N/A
+
+**Problem or surprise (if any):** N/A
+
+**Next step:** To finish making tests.
