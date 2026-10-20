@@ -23,3 +23,16 @@ def test_fhn_parameter_mapping():
 
 
 def test_hh_derivatives_channelopathy():
+    t_array = np.arange(0.0, 20.0, 0.01)
+    state = [1,3,5,7]
+    deriv_func = hh_derivatives_channelopathy(state,  t_array[0], lambda t: 0, 0.7, 0.7)
+    assert np.isfinite(deriv_func).all
+
+
+def test_fhn_derivative_channelopathy():
+    t_array = np.arange(0.0, 20.0, 0.01)
+    state = [1,3]
+    deriv_func = fhn_derivative_channelopathy(state,  t_array[0], lambda t: 0, 0.7, 0.7, a=A_DEFAULT, b=B_DEFAULT, eps=EPS_DEFAULT)
+    assert np.isfinite(deriv_func).all
+
+

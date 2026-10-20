@@ -301,3 +301,23 @@ accordingly.
 **Problem or surprise (if any):** N/A
 
 **Next step:** To finish making tests.
+
+##
+
+Day 16: 2026-10-19
+
+**Goal today:** Finish making tests of channelopathy functions
+and to start making graphs.
+
+**What I did:** Made a graph of current vs firing rate by
+writing a double for loop. Made another graph of current vs
+fixed poin over channelopahy.
+
+**Result / observation:** 2 graphs where firing rate increases
+with current and seeing that instability zone based on the fixed
+point.
+
+**Problem or surprise (if any):** N/A
+
+**Next step:** To make another graph.
+

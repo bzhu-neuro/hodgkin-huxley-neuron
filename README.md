@@ -7,22 +7,13 @@ research question.
 
 ## Project roadmap
 
-- [x] **Stage 1 — Single neuron:** Numerically integrate the 4 coupled HH
-  
-      ODEs (Euler vs. RK4), reproduce the action potential, validate against
-      known qualitative behavior (threshold, refractory period).
-- [x] **Stage 2 — Dynamical systems analysis:** Reduce to the 2D
-  
-      FitzHugh-Nagumo model, phase-plane analysis, nullclines, Jacobian
-      linearization, bifurcation diagram vs. injected current.
-- [x] **Stage 3 — Network synchronization:** Couple multiple HH neurons /
-  
-      Kuramoto oscillators, study how coupling strength and topology affect
-      synchronization.
-- [ ] **Stage 4 — Original question:** Simulate a channelopathy (perturbed
-  
-      ion channel conductance) and characterize its effect on single-neuron
-      excitability and network-level synchronization.
+- [x] **Stage 1 — Single neuron:** Numerically integrate the 4 coupled HH ODEs (Euler vs. RK4), reproduce the action potential, validate against known qualitative behavior (threshold, refractory period).
+
+- [x] **Stage 2 — Dynamical systems analysis:** Reduce to the 2D FitzHugh-Nagumo model, phase-plane analysis, nullclines, Jacobian linearization, bifurcation diagram vs. injected current.
+
+- [x] **Stage 3 — Network synchronization:** Couple multiple HH neurons / Kuramoto oscillators, study how coupling strength and topology affect synchronization.
+
+- [ ] **Stage 4 — Original question:** Simulate a channelopathy (perturbed ion channel conductance) and characterize its effect on single-neuron excitability and network-level synchronization.
 
 ## Repository structure
 
@@ -69,6 +60,9 @@ python scripts/run_stage2_phase_plane.py
 
 # Run Stage 3: coupled FHN synchronization + Kuramoto transition
 python scripts/run_stage3_synchronization.py
+
+# Run Stage 4: channelopathy
+python scripts/run_stage4_channelopathy.py
 
 # Run the test suite
 pytest tests/ -v
