@@ -72,3 +72,35 @@ def fhn_derivative_channelopathy(state, t, I_func, g_Na_scale_factor, g_K_scale_
     b_scale = parameters["b_scaled"]
     eps_scale = parameters["eps_scaled"]
     return fhn_derivatives(state, t, I_func, a_scale, b_scale, eps_scale) 
+
+
+
+def networks_parameter_sets_FHN(g_Na_scale, g_K_scale, size):
+    """
+    Parameters
+    ----------
+    g_Na_scale: scale factor for g_Na
+    g_K_scale: scale factor for g_K
+    size: size of adjancency matr
+
+    Returns
+    -------
+    baseline_params, perturbed_params
+    """
+    a_array = np.full(size, A_DEFAULT)
+    b_array = np.full(size, B_DEFAULT)
+    eps_array = np.full(size, EPS_DEFAULT)
+    baseline_params = (a_array,b_array,eps_array)
+
+    mapped_parameters = fhn_parameter_mapping(g_Na_scale, g_K_scale, A_DEFAULT, B_DEFAULT, EPS_DEFAULT)   
+    a_perturb = a_array.copy()
+    b_perturb = b_array.copy()
+    eps_perturb = eps_array.copy()  
+    a_perturb[0] = mapped_parameters["a_scaled"]
+    b_perturb[0] = mapped_parameters["b_scaled"]
+    eps_perturb[0] = mapped_parameters["eps_scaled"]
+    perturbed_params = (a_perturb,b_perturb,eps_perturb)
+
+    return baseline_params, perturbed_params
+
+    
