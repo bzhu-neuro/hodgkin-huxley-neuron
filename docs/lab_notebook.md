@@ -311,7 +311,7 @@ and to start making graphs.
 
 **What I did:** Made a graph of current vs firing rate by
 writing a double for loop. Made another graph of current vs
-fixed poin over channelopahy.
+fixed poin over channelopathy.
 
 **Result / observation:** 2 graphs where firing rate increases
 with current and seeing that instability zone based on the fixed
@@ -321,3 +321,25 @@ point.
 
 **Next step:** To make another graph.
 
+
+##
+
+Day 17: 2026-10-22
+
+**Goal today:** To make a graph of Coupling Strength vs
+post-transient error. There will be two lines (one which
+one of the neuron is diseased and another one where
+both neurons are healthy)
+
+**What I did:** Copied a graph from stage 3 but to include
+another graph where the patient is diseased.
+
+**Result / observation:** The diseased patient's neurons
+don't sychronize as rapidly as time goes on while the
+healthy patient's neurons sychronize quite quickly
+
+**Problem or surprise (if any):** N/A
+
+**Next step:** To make a heat map of sodium conductance
+vs network affected and make another heat map of
+sodium conductance vs standard deviation of RMS error.
