@@ -13,24 +13,29 @@ research question.
 
 - [x] **Stage 3 — Network synchronization:** Couple multiple HH neurons / Kuramoto oscillators, study how coupling strength and topology affect synchronization.
 
-- [ ] **Stage 4 — Original question:** Simulate a channelopathy (perturbed ion channel conductance) and characterize its effect on single-neuron excitability and network-level synchronization.
+- [x] **Stage 4 — Original question:** Simulate a channelopathy (perturbed ion channel conductance) and characterize its effect on single-neuron excitability and network-level synchronization.
 
 ## Repository structure
 
 ```
 hodgkin-huxley-neuron/
 ├── src/hh_model/           # Core package (the physics + numerics)
+│   ├── channelopathy.py    # Perturbed neuron
 │   ├── constants.py        # Biophysical constants
 │   ├── kinetics.py         # Gating variable alpha/beta functions
-│   ├── model.py             # The 4-ODE vector field
+│   ├── model.py            # The 4-ODE vector field
 │   ├── integrators.py      # Euler and RK4 integrators (generic over any ODE system)
 │   ├── stimuli.py          # Injected-current stimulus functions
+│   ├── networks.py         # Synchronization
 │   ├── reduced_models.py   # FitzHugh-Nagumo: vector field, nullclines, Jacobian analysis
 │   └── networks.py         # Coupled FHN oscillators, Kuramoto model, order parameter
 ├── scripts/                # Runnable entry points for each stage
 │   ├── run_stage1_single_spike.py
 │   ├── run_stage2_phase_plane.py
-│   └── run_stage3_synchronization.py
+│   ├── run_stage3_synchronization.py
+│   ├── run_stage4_channelopathy.py
+│   ├── run_stage4_network_single_defect.py
+│   └── run_stage4_network_sweep.py
 ├── tests/                  # Automated correctness checks (pytest)
 ├── notebooks/              # Exploratory analysis, figures for writeup
 ├── results/figures/        # Generated plots
@@ -100,6 +105,20 @@ Ring Synchronization
 
 All to All Synchronization
 ![](results/figures/stage3_kuramoto_transition_all_to_all.png)
+
+Channelopathy
+
+Firing Rate Under Different Sodium Conductances
+![](results/figures/stage4_current_to_firing_rate_channelopathy.png)
+
+Bifurcation Diagram of Base and Perturbed Neurons
+![](results/figures/stage4_bifurcation_diagram_channelopathy.png)
+
+Synchronization Error under Different Sodium Conductances
+![](results/figures/stage4_coupling_vs_synchronization_error_channelopathy.png)
+
+Mean Synchronization Change and Across-Seed Spread
+![](results/figures/stage4_mean_synchronization_change_and_across_seed_spread_channelopathy.png)
 
 ## Background
 

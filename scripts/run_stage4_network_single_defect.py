@@ -39,4 +39,6 @@ ax.set_ylabel("Post-transient RMS voltage error")
 ax.set_xlabel("Coupling strength K")
 ax.legend(loc = 'upper right')
 
+plt.savefig("results/figures/stage4_coupling_vs_synchronization_error_channelopathy.png", dpi=150)
+
 plt.show()
