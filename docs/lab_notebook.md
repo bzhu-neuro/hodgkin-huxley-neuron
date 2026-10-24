@@ -370,3 +370,25 @@ square adjacent to it.
 **Next step:** To plot the same thing but with
 only ring adjancency (only synchronize with the neurons
 to the right and left) instead of all to all adjacency.
+
+
+##
+
+Day 19: 2026-10-24
+
+**Goal today:** To plot the mean and seed spread thing 
+but with only ring adjancency (only synchronize with 
+the neurons to the right and left) instead of all to all 
+adjacency. Also to finish Stage 4 entirely and publish
+the README.
+
+**What I did:** Imported ring adjacency function from
+Stage 3 and used heatmap_ to plot. Then downloaded them
+as pictures and upload to GitHub.
+
+**Result / observation:** Ring adjacency has much higher
+error which means lower synchronization.
+
+**Problem or surprise (if any):** N/A
+
+**Next step:** To start writing a research paper!
