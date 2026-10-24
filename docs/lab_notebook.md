@@ -343,3 +343,30 @@ healthy patient's neurons sychronize quite quickly
 **Next step:** To make a heat map of sodium conductance
 vs network affected and make another heat map of
 sodium conductance vs standard deviation of RMS error.
+
+
+##
+
+Day 18: 2026-10-23
+
+**Goal today:** To make a heat map of sodium conductance
+vs network affected and make another heat map of
+sodium conductance vs standard deviation of RMS error.
+
+**What I did:** Coded 4 seperate functions that (can be
+one but split so it's easily to digest). Used plt.imshow
+to make a heatmap.
+
+**Result / observation:** The synchronization mean is
+relatively high at half conductance and half network
+affected. The standard deviation is low but prominent
+at a specific square.
+
+**Problem or surprise (if any):** Was supposed to 
+get the red for the standard deviation plot at a
+specific square but somehow got it showing up in the
+square adjacent to it.
+
+**Next step:** To plot the same thing but with
+only ring adjancency (only synchronize with the neurons
+to the right and left) instead of all to all adjacency.

@@ -64,6 +64,10 @@ python scripts/run_stage3_synchronization.py
 # Run Stage 4: channelopathy
 python scripts/run_stage4_channelopathy.py
 
+python scripts/run_stage4_network_single_defect.py
+
+python scripts/run_stage4_network_sweep.py
+
 # Run the test suite
 pytest tests/ -v
 ```
