@@ -26,9 +26,10 @@ for indexC,param in enumerate(params):
         deriv_func = lambda state,t: coupled_fhn_derivatives(state, t, lambda t: I_array, K, adj_matr, param[0],param[1],param[2])
         trajectory = rk4_integrate(deriv_func, state0, t_array)
 
-
-        difference = trajectory[:,1] - trajectory[:,0]
-        rms[index] = np.sqrt(np.mean(np.square(difference)))
+        start = int(len(trajectory) * 0.5)
+        voltage = trajectory[start:, :n]
+        mean_voltage = np.mean(voltage, axis=1, keepdims=True)
+        rms[index] = np.sqrt(np.mean(np.square(voltage - mean_voltage)))
 
     ax.plot(K_array, rms, marker='o', color=colors[indexC], linestyle='-',label = labels[indexC])
 
